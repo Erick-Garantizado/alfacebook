@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(208, 236, 227, 0.377);/* azul do facebook rgba(208, 208, 236, 0.377) */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.logo-texto {
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    padding-right: 20px;
+}
+
+.logo {
+    font-size: 3rem;
+    color: rgb(19, 173, 65);
+    margin-bottom: 30px;
+}
+
+.texto {
+    font-size: 2em;
+}
+
+.cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    min-height: 17rem;
+    padding: 4rem 0;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    box-shadow: 1px 5px 8px 0px;
+}
+
+.email {
+    padding: 10px 20px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.senha {
+    padding: 10px 20px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+.input-email, .input-senha {
+    border-style: none;
+    display: inline-block;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.botao, .criar-conta {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.botao a, .criar-conta a {
+    background-color: rgb(27, 212, 154);
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.botao a:hover, .criar-conta a:hover {
+    background-color: teal;
+}
+
+.esqueceu-senha a {
+    color: teal;
+}
+
+.esqueceu-senha a:hover {
+    text-decoration: underline;
+}
+
+.descricao {
+    margin-top: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .principal {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    .principal {
+        width: 90%;
+        display: grid;
+    }
+
+    .texto {
+        margin-bottom: 20px;
+    }
+}
